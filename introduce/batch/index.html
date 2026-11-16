@@ -1,0 +1,1011 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <title>バッチ設定 &mdash; Biz∫販売 &nbsp; 3.0.5 &nbsp; Biz∫販売</title>
+    <link rel="stylesheet" href="../../_static/main.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../_static/language_data.js"></script>
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Appendix" href="../appendix/Appendix.html" />
+    <link rel="prev" title="3. Biz∫販売 ワークフローパラメータ修正" href="../workflow/sms_wf_parameter.html" />
+    <script type="text/javascript" src="../../_static/jquery.cookie.js"></script>
+    <script type="text/javascript" src="../../_static/amy.js"></script>
+    <script type="text/javascript" src="../../_static/stickyfill.min.js"></script>
+  </head><body>
+    <div class="container">
+      <div class="sticky">
+        <div class="header">
+          <div class="heading">
+            <div class="left">
+              <a href="https://www.biz-integral.com" title="NTT DATA BIZINTEGRAL">
+                <img src="../../_static/biz_logo.gif" class="biz-logo">
+              </a>
+            </div>
+            <div class="right">
+              <div>
+                <a href="../../index.html" class="document-name">Biz∫販売</a>
+                <span class="heading-supplementation">3.0.5</span>
+              </div>
+            </div>
+          </div>
+          <div class="heading-link">
+            <div style="display:flex;">
+              <a class="reference external partner-site" href="https://partner.biz-integral.net">
+                <i class="material-icons">help_outline</i>
+                <span>Partner site</span>
+              </a>
+              <a class="reference external partner-site" href="https://biz-integral.zendesk.com/hc/ja">
+                <img src="../../_static/bizkuma.png" style="padding-bottom:5px; padding-right:2px; height:24px !important;">
+                <span>お問い合わせ</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="pdf-header">
+          <div class="left"><span class="header-logo"></span></div>
+          <div class="right">
+            <span class="product-name">Biz∫販売</span>
+            <span class="shorttitle">Biz∫販売</span>
+            <span class="heading-supplementation">3.0.5</span>
+          </div>
+        </div>
+
+        <div class="nav topnav">
+          <div class="topnav-left">
+            
+    <div class="related nav-related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul class="breadcrumbs">
+        
+        <li class="nav-item nav-item-0"><a href="../../index.html">Biz∫販売</a></li>
+        <li class="nav-item nav-item-1 breadcrumbs-item"><a href="../index.html" accesskey="U">導入マニュアル</a></li>
+        <li class="nav-item breadcrumbs-item"><a href="">バッチ設定</a></li> 
+      </ul>
+    </div>
+    
+          </div>
+          <div class="topnav-right">
+            <a id="copy-breadcrumbs" class="internal menu" title="パンクズリストをクリックボードにコピーします。"><i class="material-icons">content_copy</i><span>Naviをコピー</span></a>
+          </div>
+        </div>
+
+        <div class="toolbar">
+          <div id="toggle-menu" class="toggle-menu" title="目次">
+            <i class="material-icons default">menu</i>
+          </div>
+          <div class="toolbar-right">
+            <a href="../workflow/sms_wf_parameter.html" class="internal menu" title="previous"><i class="material-icons">arrow_back</i><span>前へ</span></a>
+            <a href="../appendix/Appendix.html" class="internal menu" title="next"><span>次へ</span><i class="material-icons">arrow_forward</i></a>
+            <a href="#" class="internal menu" title="Go to page top"><i class="material-icons">arrow_upward</i><span>Topに移動</span></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="mainContainer">
+        <div class="wrapper columns">
+          <div id="sidebar-left" class="sidebar active">
+            
+    <div class="sphinxsidebar">
+      <div class="sphinxsidebarwrapper ''">
+
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../history/index.html">更新履歴</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../changelog/index.html">変更履歴</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general/setup/index.html">運用環境セットアップガイド</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general/developer/index.html">開発環境セットアップガイド</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">導入マニュアル</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../preface/index.html">はじめに</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../preparation/index.html">導入前準備</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../baseset/index.html">Biz∫ 基盤の設定</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../sms/index.html">販売マスタの設定</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../workflow/index.html">IM-Workflow 設定</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">バッチ設定</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#section-2">着手条件</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#section-3">準備</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#section-4">実行手順</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#section-5">実行ユーザの設定</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#section-6">実行ユーザにアプリケーションライセンス及び主所属を設定</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#section-7">ジョブネット設定</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#section-8">バッチ実行設定</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#intra-mart">intra-mart スケジュールサービス連携方式を採用する場合</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#intra-mart-1">intra-mart 外部ソフトウェア接続方式を採用する場合</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#section-9">棚卸理論在庫生成バッチの実行単位設定</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#section-10">会社単位</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#section-11">組織単位</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#ediedi">EDI受注ファイル取込、EDI受注データ取込設定</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#edi">EDI受注ファイル取込</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#edi-1">EDI受注データ取込</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../appendix/Appendix.html">Appendix</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../workflow/index.html">ワークフロー設定ガイド</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../import/index.html">一括取込マニュアル</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../deptchg/index.html">組織変更ガイド</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../cookbook/index.html">逆引き(Cookbook)</a></li>
+</ul>
+
+      </div>
+    </div>
+          </div>
+          <div class="content">
+            
+<div class="section" id="section-1">
+<span id="sms-introduce-batch"></span><h1>バッチ設定<a class="headerlink" href="#section-1" title="Permalink to this headline">¶</a></h1>
+<p>Biz∫販売のバッチ実行に関する設定を行います。</p>
+<div class="section" id="section-2">
+<h2>着手条件<a class="headerlink" href="#section-2" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>intra-mart Accel Platform の <a class="reference external" href="http://www.intra-mart.jp/document/library/iap/public/im_job_scheduler/im_job_scheduler_specification/index.html">ジョブスケジューラ仕様書</a> を読了していること。</li>
+<li>「Biz∫APF リファレンス/フレームワーク/開発リファレンス(アプリケーション)/バッチ処理フレームワーク」を読了していること。</li>
+</ul>
+</div>
+<div class="section" id="section-3">
+<h2>準備<a class="headerlink" href="#section-3" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li>バッチ処理の実行方式の決定</li>
+</ol>
+<blockquote>
+<div><p>バッチ処理フレームワークでは以下の2形態でのバッチ処理起動を行うことができます。</p>
+<p>採用する方式を決定してください。各方式の特性については「Biz∫APF リファレンス/フレームワーク/開発リファレンス(アプリケーション)/バッチ処理フレームワーク」を参照してください。</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="3%" />
+<col width="33%" />
+<col width="17%" />
+<col width="47%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">No．</th>
+<th class="head">メニュー</th>
+<th class="head">Biz∫販売で使用可否</th>
+<th class="head">備考</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>1</td>
+<td>intra-mart 外部ソフトウェア接続方式</td>
+<td>○</td>
+<td>intra-mart外部ソフトウェア接続を利用し、コマンドラインからのバッチ処理起動要求を受けintra-mart上でバッチ処理を実行する方式です。</td>
+</tr>
+<tr class="row-odd"><td>2</td>
+<td>intra-mart スケジュールサービス連携方式</td>
+<td>○</td>
+<td>intra-mart スケジュールサービスをスケジューラとして利用しバッチ処理を実行する方式です。</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li>ジョブネットを決定（intra-mart スケジュールサービス連携方式を採用する場合のみ）</li>
+</ol>
+<blockquote>
+<div>intra-mart Accel Platform では、複数のバッチ処理を組み合わせてジョブネットを定義することができます。 Biz∫販売 のセットアップでは、バッチプログラム毎にジョブネットを登録していますが、複数のバッチを組み合わせたジョブネットを定義したい場合、ジョブネットの設計を行ってください。</div></blockquote>
+<ol class="arabic" start="3">
+<li><p class="first">バッチ毎のトリガを決定（intra-mart スケジュールサービス連携方式を採用する場合のみ）</p>
+<p>Biz∫販売 のセットアップでは、 intra-mart Accel Platform のジョブとジョブネットを登録していますが、トリガの設定はしていません。</p>
+</li>
+</ol>
+<blockquote>
+<div>利用するバッチプログラム毎に、トリガの設定を行ってください。</div></blockquote>
+<ol class="arabic simple" start="4">
+<li>棚卸理論在庫生成バッチの実行単位を決定</li>
+</ol>
+<blockquote>
+<div><p>棚卸理論在庫生成バッチは、会社単位と組織単位で実行することができます。事前に実行単位を決めてください。</p>
+<p>また、組織単位で実行する場合、実行対象組織を決めてください。</p>
+<div class="admonition note">
+<p class="first admonition-title">コラム</p>
+<ul class="last simple">
+<li>複数組織で実行することが可能ですが、組織毎に、ジョブ定義する必要があります。詳細は後述する実行手順を参照して下さい。</li>
+</ul>
+</div>
+</div></blockquote>
+<ol class="arabic simple" start="5">
+<li>EDI受注ファイル取込、EDI受注データ取込を決定</li>
+</ol>
+<blockquote>
+<div>EDI連携のジョブは並列実行が可能です。EDI連携する他システムが複数ある場合、各システムとジョブの紐付けを決定してください。</div></blockquote>
+</div>
+<div class="section" id="section-4">
+<h2>実行手順<a class="headerlink" href="#section-4" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="section-5">
+<h3>実行ユーザの設定<a class="headerlink" href="#section-5" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><ul class="simple">
+<li>Biz∫APFへアクセス可能なユーザでintra-martへログインしてください。</li>
+</ul>
+<blockquote>
+<div><table border="1" class="docutils">
+<colgroup>
+<col width="2%" />
+<col width="98%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">No．</th>
+<th class="head">URL</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>1</td>
+<td><code class="docutils literal notranslate"><span class="pre">http://{IPアドレス}:{ポート番号}/imart/login</span></code></td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<ul class="simple">
+<li>以下のメニューを開きます。</li>
+</ul>
+<blockquote>
+<div><table border="1" class="docutils">
+<colgroup>
+<col width="2%" />
+<col width="98%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">No．</th>
+<th class="head">メニュー</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>1</td>
+<td>Biz∫ APF/システム管理（会社共通）/ジョブ/ジョブ管理</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<ul class="simple">
+<li>利用する各バッチの実行ユーザをそれぞれ設定してください。</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="section-6">
+<h3>実行ユーザにアプリケーションライセンス及び主所属を設定<a class="headerlink" href="#section-6" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><blockquote>
+<div><div class="admonition note">
+<p class="first admonition-title">コラム</p>
+<ul class="last simple">
+<li>Biz∫APFでは全てのユーザに主所属が設定されていることが制約になっており、バッチ実行ユーザも例外ではありません。必ず、起票組織セットの配下の組織に主所属設定してください。</li>
+</ul>
+</div>
+</div></blockquote>
+<ul class="simple">
+<li>テナント管理者ユーザでintra-martへログインしてください。</li>
+<li>以下のメニューを開きます。</li>
+</ul>
+<blockquote>
+<div><table border="1" class="docutils">
+<colgroup>
+<col width="2%" />
+<col width="98%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">No．</th>
+<th class="head">メニュー</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>1</td>
+<td>テナント管理/共通マスタ/ユーザ</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<ul class="simple">
+<li>上記で設定した実行ユーザを検索し、検索結果から「編集」アイコンをクリックします。</li>
+<li>ロールタブにて、下表の通りにアプリケーションライセンスを付与してください。</li>
+</ul>
+<blockquote>
+<div><table border="1" class="docutils">
+<colgroup>
+<col width="2%" />
+<col width="33%" />
+<col width="65%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">No．</th>
+<th class="head">バッチ処理</th>
+<th class="head">アプリケーションライセンス</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>1</td>
+<td>棚卸理論在庫生成</td>
+<td>BYAAA（BIZINTEGRAL SMS SL）、BYAAG（BIZINTEGRAL SMS IV）</td>
+</tr>
+<tr class="row-odd"><td>2</td>
+<td>EDI受注ファイル取込、EDI受注データ取込</td>
+<td>BYAAA（BIZINTEGRAL SMS SL）、BYAAC（BIZINTEGRAL SMS SA）</td>
+</tr>
+<tr class="row-even"><td>3</td>
+<td>上記以外</td>
+<td>BYAAA（BIZINTEGRAL SMS SL）</td>
+</tr>
+</tbody>
+</table>
+<p>以下のようにアプリケーションライセンスが付与されていることを確認してください。</p>
+<div class="figure">
+<a class="reference internal image-reference" href="../../_images/batch-001.png"><img alt="../../_images/batch-001.png" src="../../_images/batch-001.png" style="width: 500px;" /></a>
+</div>
+</div></blockquote>
+<ul class="simple">
+<li>組織所属タブにて起票組織セット配下の組織に対して主所属を設定します。</li>
+</ul>
+<blockquote>
+<div><p>以下のように主所属マークが付いていることを確認してください。</p>
+<div class="figure">
+<a class="reference internal image-reference" href="../../_images/batch-002.png"><img alt="../../_images/batch-002.png" src="../../_images/batch-002.png" style="width: 500px;" /></a>
+</div>
+<p>（上図では会社のルートの所属させています）</p>
+</div></blockquote>
+</div></blockquote>
+</div>
+<div class="section" id="section-7">
+<h3>ジョブネット設定<a class="headerlink" href="#section-7" title="Permalink to this headline">¶</a></h3>
+<p>セットアップで登録したもの以外にジョブネットを設定したい場合、 intra-mart Accel Platform / テナント管理者操作ガイドの、 <a class="reference external" href="http://www.intra-mart.jp/document/library/iap/public/operation/tenant_administrator_guide/texts/basic_guide/basic_guide_14.html#ジョブネットを設定する">ジョブネットを設定する</a> に従い、設定を行います。</p>
+</div>
+<div class="section" id="section-8">
+<h3>バッチ実行設定<a class="headerlink" href="#section-8" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="intra-mart">
+<h4>intra-mart スケジュールサービス連携方式を採用する場合<a class="headerlink" href="#intra-mart" title="Permalink to this headline">¶</a></h4>
+<p>セットアップで登録したジョブネットのトリガを設定します。</p>
+<blockquote>
+<div><ul class="simple">
+<li>テナント管理者でintra-martへログインしてください。</li>
+<li>以下のメニューを開きます。</li>
+</ul>
+<blockquote>
+<div><table border="1" class="docutils">
+<colgroup>
+<col width="2%" />
+<col width="98%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">No．</th>
+<th class="head">メニュー</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>1</td>
+<td>テナント管理／ジョブ管理／ジョブネット設定</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<ul class="simple">
+<li>各ジョブネットのトリガを設定して下さい。</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="intra-mart-1">
+<h4>intra-mart 外部ソフトウェア接続方式を採用する場合<a class="headerlink" href="#intra-mart-1" title="Permalink to this headline">¶</a></h4>
+<blockquote>
+<div>intra-mart 外部ソフトウェア接続方式の設定手順は、「Biz∫APF  リファレンス/フレームワーク/開発リファレンス(アプリケーション)/バッチ処理フレームワーク」を参照して下さい。</div></blockquote>
+</div>
+</div>
+<div class="section" id="section-9">
+<span id="sms-introduce-batch-book-inventory-generate"></span><h3>棚卸理論在庫生成バッチの実行単位設定<a class="headerlink" href="#section-9" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="section-10">
+<h4>会社単位<a class="headerlink" href="#section-10" title="Permalink to this headline">¶</a></h4>
+<blockquote>
+<div>初期では、会社単位で実行するようになっているため、設定する必要がありません。</div></blockquote>
+</div>
+<div class="section" id="section-11">
+<h4>組織単位<a class="headerlink" href="#section-11" title="Permalink to this headline">¶</a></h4>
+<blockquote>
+<div>以下の手順に従い、組織単位で実行するバッチを追加してください。</div></blockquote>
+<ol class="arabic simple">
+<li>ジョブ、ジョブネット設定（intra-mart スケジュールサービス連携方式を採用する場合のみ）</li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li>テナント管理者でintra-martへログインしてください。</li>
+<li>以下のメニューを開きます。</li>
+</ul>
+<blockquote>
+<div><table border="1" class="docutils">
+<colgroup>
+<col width="2%" />
+<col width="98%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">No．</th>
+<th class="head">メニュー</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>1</td>
+<td>テナント管理／ジョブ管理／ジョブ設定</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<ul>
+<li><p class="first">下記の通りに新規ジョブを登録してください。</p>
+<p>※ 「パラメータを追加する」ボタンを押下して、下記のNo．7、No．8のパラメータを追加して下さい。</p>
+</li>
+</ul>
+<blockquote>
+<div><table border="1" class="docutils">
+<colgroup>
+<col width="2%" />
+<col width="33%" />
+<col width="65%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">No．</th>
+<th class="head">設定項目</th>
+<th class="head">値</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>1</td>
+<td>ジョブカテゴリ</td>
+<td>任意（例： 在庫管理 ）</td>
+</tr>
+<tr class="row-odd"><td>2</td>
+<td>ジョブID</td>
+<td>任意の文字列（例： <code class="docutils literal notranslate"><span class="pre">sms.iv.dl.BZ1.002</span></code> ）</td>
+</tr>
+<tr class="row-even"><td>3</td>
+<td>ジョブ名</td>
+<td>任意の文字列（例：棚卸理論在庫生成（○○部））</td>
+</tr>
+<tr class="row-odd"><td>4</td>
+<td>ジョブ説明</td>
+<td>任意の文字列</td>
+</tr>
+<tr class="row-even"><td>5</td>
+<td>実行言語</td>
+<td>Java</td>
+</tr>
+<tr class="row-odd"><td>6</td>
+<td>実行プログラム</td>
+<td><code class="docutils literal notranslate"><span class="pre">com.biz_integral.service.batch.BizJobImplementor</span></code></td>
+</tr>
+<tr class="row-even"><td>7</td>
+<td>実行パラメータ / <code class="docutils literal notranslate"><span class="pre">companyCd</span></code></td>
+<td>会社コード（例： biz）</td>
+</tr>
+<tr class="row-odd"><td>8</td>
+<td>実行パラメータ / <code class="docutils literal notranslate"><span class="pre">jobCd</span></code></td>
+<td>任意の文字列（例： sms_iv_BookInventoryGenerateBatch_sales）</td>
+</tr>
+</tbody>
+</table>
+<div class="figure">
+<a class="reference internal image-reference" href="../../_images/batch-003.png"><img alt="../../_images/batch-003.png" src="../../_images/batch-003.png" style="width: 500px;" /></a>
+</div>
+</div></blockquote>
+<ul class="simple">
+<li>以下のメニューを開きます。</li>
+</ul>
+<blockquote>
+<div><table border="1" class="docutils">
+<colgroup>
+<col width="2%" />
+<col width="98%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">No．</th>
+<th class="head">メニュー</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>1</td>
+<td>テナント管理／ジョブ管理／ジョブネット設定</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<ul class="simple">
+<li>intra-mart Accel Platform / テナント管理者操作ガイドの、 <a class="reference external" href="http://www.intra-mart.jp/document/library/iap/public/operation/tenant_administrator_guide/texts/basic_guide/basic_guide_14.html#ジョブネットを設定する">ジョブネットを設定する</a> に従い、設定を行います。</li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li>Bizジョブ設定</li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li>Biz∫APF管理者でintra-martへログインしてください。</li>
+<li>以下のメニューを開きます。</li>
+</ul>
+<blockquote>
+<div><table border="1" class="docutils">
+<colgroup>
+<col width="2%" />
+<col width="98%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">No．</th>
+<th class="head">メニュー</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>1</td>
+<td>Biz∫ APF/システム管理（会社共通）/ジョブ/ジョブ管理</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<ul>
+<li><p class="first">「F5：新規」を押下し、ジョブ設定登録画面へ遷移します。</p>
+</li>
+<li><p class="first">以下の通りにジョブを登録してください。</p>
+<p>※ 「SF6：名称追加」、「SF6：パラメータ追加」ボタンを押下して、下記のNo．2、No．3の項目を追加して下さい。</p>
+</li>
+</ul>
+<blockquote>
+<div><table border="1" class="docutils">
+<colgroup>
+<col width="2%" />
+<col width="24%" />
+<col width="73%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">No．</th>
+<th class="head">設定項目</th>
+<th class="head">値</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>1</td>
+<td>ジョブコード</td>
+<td>上記ジョブ設定で指定したjobCd</td>
+</tr>
+<tr class="row-odd"><td>2</td>
+<td>名称</td>
+<td>任意の名称（例：棚卸理論在庫生成（○○部））</td>
+</tr>
+<tr class="row-even"><td>3</td>
+<td>ジョブパラメータ / executionDeptCode</td>
+<td>棚卸理論在庫生成バッチを実行したい組織コード</td>
+</tr>
+<tr class="row-odd"><td>4</td>
+<td>実行ユーザコード</td>
+<td>バッチ実行時に利用するユーザのID（BYAAA（BIZINTEGRAL SMS SL）、BYAAG（BIZINTEGRAL SMS IV）のアプリケーションライセンスが必要）</td>
+</tr>
+<tr class="row-even"><td>6</td>
+<td>コンポーネントクラス名</td>
+<td><code class="docutils literal notranslate"><span class="pre">com.biz_integral.sms.iv.application.web.inventory.BookInventoryGenerateBatch</span></code></td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+</div></blockquote>
+<ol class="arabic simple" start="3">
+<li>複数組織において棚卸理論在庫生成バッチを実行したい場合、組織数分に上記の1、2を繰り返します。</li>
+</ol>
+</div>
+</div>
+<div class="section" id="ediedi">
+<span id="sms-introduce-batch-book-edi-cooperation"></span><h3>EDI受注ファイル取込、EDI受注データ取込設定<a class="headerlink" href="#ediedi" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="edi">
+<h4>EDI受注ファイル取込<a class="headerlink" href="#edi" title="Permalink to this headline">¶</a></h4>
+<blockquote>
+<div>以下の手順に従い、実行するバッチを追加してください。</div></blockquote>
+<ol class="arabic simple">
+<li>ジョブ、ジョブネット設定（intra-mart スケジュールサービス連携方式を採用する場合のみ）</li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li>テナント管理者でintra-martへログインしてください。</li>
+<li>以下のメニューを開きます。</li>
+</ul>
+<blockquote>
+<div><table border="1" class="docutils">
+<colgroup>
+<col width="2%" />
+<col width="98%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">No．</th>
+<th class="head">メニュー</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>1</td>
+<td>テナント管理／ジョブ管理／ジョブ設定</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<ul>
+<li><p class="first">下記の通りに新規ジョブを登録してください。</p>
+<p>※ 「パラメータを追加する」ボタンを押下して、下記のNo．7、No．8、No．9のパラメータを追加して下さい。</p>
+</li>
+</ul>
+<blockquote>
+<div><table border="1" class="docutils">
+<colgroup>
+<col width="2%" />
+<col width="33%" />
+<col width="65%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">No．</th>
+<th class="head">設定項目</th>
+<th class="head">値</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>1</td>
+<td>ジョブカテゴリ</td>
+<td>任意（例： EDI連携 ）</td>
+</tr>
+<tr class="row-odd"><td>2</td>
+<td>ジョブID</td>
+<td>任意の文字列（例： <code class="docutils literal notranslate"><span class="pre">sms.sa.ac.BZ1.001</span></code> ）</td>
+</tr>
+<tr class="row-even"><td>3</td>
+<td>ジョブ名</td>
+<td>任意の文字列（例：EDI受注ファイル取込）</td>
+</tr>
+<tr class="row-odd"><td>4</td>
+<td>ジョブ説明</td>
+<td>任意の文字列</td>
+</tr>
+<tr class="row-even"><td>5</td>
+<td>実行言語</td>
+<td>Java</td>
+</tr>
+<tr class="row-odd"><td>6</td>
+<td>実行プログラム</td>
+<td><code class="docutils literal notranslate"><span class="pre">com.biz_integral.service.batch.BizJobImplementor</span></code></td>
+</tr>
+<tr class="row-even"><td>7</td>
+<td>実行パラメータ / <code class="docutils literal notranslate"><span class="pre">companyCd</span></code></td>
+<td>会社コード（例： BZ1）</td>
+</tr>
+<tr class="row-odd"><td>8</td>
+<td>実行パラメータ / <code class="docutils literal notranslate"><span class="pre">jobCd</span></code></td>
+<td>任意の文字列（例： sms_sa_EdiAcceptFileImportBatch）</td>
+</tr>
+<tr class="row-even"><td>9</td>
+<td>実行パラメータ / <code class="docutils literal notranslate"><span class="pre">jobId</span></code></td>
+<td>上記No.2で設定したジョブID</td>
+</tr>
+</tbody>
+</table>
+<div class="figure">
+<a class="reference internal image-reference" href="../../_images/batch-004.png"><img alt="../../_images/batch-004.png" src="../../_images/batch-004.png" style="width: 800px;" /></a>
+</div>
+</div></blockquote>
+<ul class="simple">
+<li>以下のメニューを開きます。</li>
+</ul>
+<blockquote>
+<div><table border="1" class="docutils">
+<colgroup>
+<col width="2%" />
+<col width="98%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">No．</th>
+<th class="head">メニュー</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>1</td>
+<td>テナント管理／ジョブ管理／ジョブネット設定</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<ul class="simple">
+<li>intra-mart Accel Platform / テナント管理者操作ガイドの、 <a class="reference external" href="http://www.intra-mart.jp/document/library/iap/public/operation/tenant_administrator_guide/texts/basic_guide/basic_guide_14.html#ジョブネットを設定する">ジョブネットを設定する</a> に従い、設定を行います。</li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li>Bizジョブ設定</li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li>Biz∫APF管理者でintra-martへログインしてください。</li>
+<li>以下のメニューを開きます。</li>
+</ul>
+<blockquote>
+<div><table border="1" class="docutils">
+<colgroup>
+<col width="2%" />
+<col width="98%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">No．</th>
+<th class="head">メニュー</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>1</td>
+<td>Biz∫ APF/システム管理（会社共通）/ジョブ/ジョブ管理</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<ul>
+<li><p class="first">「F5：新規」を押下し、ジョブ設定登録画面へ遷移します。</p>
+</li>
+<li><p class="first">以下の通りにジョブを登録してください。</p>
+<p>※ 「SF6：名称追加」ボタンを押下して、下記のNo．2の項目を追加して下さい。</p>
+</li>
+</ul>
+<blockquote>
+<div><table border="1" class="docutils">
+<colgroup>
+<col width="2%" />
+<col width="24%" />
+<col width="73%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">No．</th>
+<th class="head">設定項目</th>
+<th class="head">値</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>1</td>
+<td>ジョブコード</td>
+<td>上記ジョブ設定で指定したjobCd</td>
+</tr>
+<tr class="row-odd"><td>2</td>
+<td>名称</td>
+<td>任意の名称（例：EDI受注ファイル取込）</td>
+</tr>
+<tr class="row-even"><td>3</td>
+<td>実行ユーザコード</td>
+<td>バッチ実行時に利用するユーザのID（BYAAA（BIZINTEGRAL SMS SL）、BYAAC（BIZINTEGRAL SMS SA）のアプリケーションライセンスが必要）</td>
+</tr>
+<tr class="row-odd"><td>4</td>
+<td>コンポーネントクラス名</td>
+<td><code class="docutils literal notranslate"><span class="pre">com.biz_integral.sms.sa.application.web.accept.EdiAcceptFileImportBatch</span></code></td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+</div></blockquote>
+</div>
+<div class="section" id="edi-1">
+<h4>EDI受注データ取込<a class="headerlink" href="#edi-1" title="Permalink to this headline">¶</a></h4>
+<blockquote>
+<div>以下の手順に従い、実行するバッチを追加してください。</div></blockquote>
+<ol class="arabic simple">
+<li>ジョブ、ジョブネット設定（intra-mart スケジュールサービス連携方式を採用する場合のみ）</li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li>テナント管理者でintra-martへログインしてください。</li>
+<li>以下のメニューを開きます。</li>
+</ul>
+<blockquote>
+<div><table border="1" class="docutils">
+<colgroup>
+<col width="2%" />
+<col width="98%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">No．</th>
+<th class="head">メニュー</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>1</td>
+<td>テナント管理／ジョブ管理／ジョブ設定</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<ul>
+<li><p class="first">下記の通りに新規ジョブを登録してください。</p>
+<p>※ 「パラメータを追加する」ボタンを押下して、下記のNo．7、No．8、No．9、No．10のパラメータを追加して下さい。</p>
+</li>
+</ul>
+<blockquote>
+<div><table border="1" class="docutils">
+<colgroup>
+<col width="2%" />
+<col width="33%" />
+<col width="65%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">No．</th>
+<th class="head">設定項目</th>
+<th class="head">値</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>1</td>
+<td>ジョブカテゴリ</td>
+<td>任意（例： EDI連携 ）</td>
+</tr>
+<tr class="row-odd"><td>2</td>
+<td>ジョブID</td>
+<td>任意の文字列（例： <code class="docutils literal notranslate"><span class="pre">sms.sa.ac.BZ1.002</span></code> ）</td>
+</tr>
+<tr class="row-even"><td>3</td>
+<td>ジョブ名</td>
+<td>任意の文字列（例：EDI受注データ取込）</td>
+</tr>
+<tr class="row-odd"><td>4</td>
+<td>ジョブ説明</td>
+<td>任意の文字列</td>
+</tr>
+<tr class="row-even"><td>5</td>
+<td>実行言語</td>
+<td>Java</td>
+</tr>
+<tr class="row-odd"><td>6</td>
+<td>実行プログラム</td>
+<td><code class="docutils literal notranslate"><span class="pre">com.biz_integral.service.batch.BizJobImplementor</span></code></td>
+</tr>
+<tr class="row-even"><td>7</td>
+<td>実行パラメータ / <code class="docutils literal notranslate"><span class="pre">companyCd</span></code></td>
+<td>会社コード（例： BZ1）</td>
+</tr>
+<tr class="row-odd"><td>8</td>
+<td>実行パラメータ / <code class="docutils literal notranslate"><span class="pre">jobCd</span></code></td>
+<td>任意の文字列（例： sms_sa_EdiAcceptDataImportBatch）</td>
+</tr>
+<tr class="row-even"><td>9</td>
+<td>実行パラメータ / <code class="docutils literal notranslate"><span class="pre">jobId</span></code></td>
+<td>上記No.2で設定したジョブID</td>
+</tr>
+<tr class="row-odd"><td>10</td>
+<td>実行パラメータ / <code class="docutils literal notranslate"><span class="pre">EDIJobProcessDiv</span></code></td>
+<td>“01”(通常)または”02”(エラー)</td>
+</tr>
+</tbody>
+</table>
+<div class="figure">
+<a class="reference internal image-reference" href="../../_images/batch-005.png"><img alt="../../_images/batch-005.png" src="../../_images/batch-005.png" style="width: 800px;" /></a>
+</div>
+</div></blockquote>
+<ul class="simple">
+<li>以下のメニューを開きます。</li>
+</ul>
+<blockquote>
+<div><table border="1" class="docutils">
+<colgroup>
+<col width="2%" />
+<col width="98%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">No．</th>
+<th class="head">メニュー</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>1</td>
+<td>テナント管理／ジョブ管理／ジョブネット設定</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<ul class="simple">
+<li>intra-mart Accel Platform / テナント管理者操作ガイドの、 <a class="reference external" href="http://www.intra-mart.jp/document/library/iap/public/operation/tenant_administrator_guide/texts/basic_guide/basic_guide_14.html#ジョブネットを設定する">ジョブネットを設定する</a> に従い、設定を行います。</li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li>Bizジョブ設定</li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li>Biz∫APF管理者でintra-martへログインしてください。</li>
+<li>以下のメニューを開きます。</li>
+</ul>
+<blockquote>
+<div><table border="1" class="docutils">
+<colgroup>
+<col width="2%" />
+<col width="98%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">No．</th>
+<th class="head">メニュー</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>1</td>
+<td>Biz∫ APF/システム管理（会社共通）/ジョブ/ジョブ管理</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<ul>
+<li><p class="first">「F5：新規」を押下し、ジョブ設定登録画面へ遷移します。</p>
+</li>
+<li><p class="first">以下の通りにジョブを登録してください。</p>
+<p>※ 「SF6：名称追加」ボタンを押下して、下記のNo．2の項目を追加して下さい。</p>
+</li>
+</ul>
+<blockquote>
+<div><table border="1" class="docutils">
+<colgroup>
+<col width="2%" />
+<col width="24%" />
+<col width="73%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">No．</th>
+<th class="head">設定項目</th>
+<th class="head">値</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>1</td>
+<td>ジョブコード</td>
+<td>上記ジョブ設定で指定したjobCd</td>
+</tr>
+<tr class="row-odd"><td>2</td>
+<td>名称</td>
+<td>任意の名称（例：EDI受注データ取込）</td>
+</tr>
+<tr class="row-even"><td>3</td>
+<td>実行ユーザコード</td>
+<td>バッチ実行時に利用するユーザのID（BYAAA（BIZINTEGRAL SMS SL）、BYAAC（BIZINTEGRAL SMS SA）のアプリケーションライセンスが必要）</td>
+</tr>
+<tr class="row-odd"><td>4</td>
+<td>コンポーネントクラス名</td>
+<td><code class="docutils literal notranslate"><span class="pre">com.biz_integral.sms.sa.application.web.accept.EdiAcceptDataImportBatch</span></code></td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+</div></blockquote>
+</div>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="nav bottomnav">
+        
+    <div class="related nav-related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul class="breadcrumbs">
+        
+        <li class="nav-item nav-item-0"><a href="../../index.html">Biz∫販売</a></li>
+        <li class="nav-item nav-item-1 breadcrumbs-item"><a href="../index.html" >導入マニュアル</a></li>
+        <li class="nav-item breadcrumbs-item"><a href="">バッチ設定</a></li> 
+      </ul>
+    </div>
+    
+      </div>
+
+      <div class="footer">
+        <hr class="bar" />
+        <div class="inner">
+          <p class="copyright">
+             Copyright &copy; 2026 NTT DATA CORPORATION 
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
