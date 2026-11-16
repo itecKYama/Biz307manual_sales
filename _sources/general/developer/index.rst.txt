@@ -1,0 +1,16 @@
+.. include:: ../../include/definition.txt
+
+.. _sms_setup_developer_environment:
+
+開発環境セットアップガイド
+===============================================
+
+開発環境の構築手順については、 |BAPF| の
+`開発環境セットアップガイド`_ 
+[#partner_apf]_ をご参照ください。
+
+
+.. [#partner_apf] |PARTNER_SITE| に接続します。
+
+
+※ Biz∫販売の開発では、Biz∫APF ワークベンチを利用する設定にて開発環境を構築する必要があります。

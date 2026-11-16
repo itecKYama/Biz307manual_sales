@@ -1,0 +1,22 @@
+.. include:: ../../../include/definition.txt
+
+.. _SMS_introduce_baseset-biz:
+
+===================================================
+|BIZ| 共通マスタ設定
+===================================================
+
+.. toctree::
+   :maxdepth: 1
+   
+   unit
+   currency
+   calendar
+   indirect_tax
+
+.. only:: internal
+
+   unit             :単位登録
+   currency         :通貨登録
+   calendar         :カレンダ登録
+   indirect_tax     :間接税登録

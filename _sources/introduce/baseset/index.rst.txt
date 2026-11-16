@@ -1,0 +1,23 @@
+.. include:: ../../include/definition.txt
+
+.. _SMS_introduce_baseset:
+
+===================================================
+|BIZ| 基盤の設定
+===================================================
+
+
+.. toctree::
+   :maxdepth: 1
+   :numbered:
+   
+   im/index
+   auth/authority
+   biz/index
+
+.. only:: internal
+
+   im/index   : IM-共通マスタの設定
+   auth/authority : アクセス権設定
+   biz/index  : Biz∫共通マスタ設定
+

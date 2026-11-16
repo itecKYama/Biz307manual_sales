@@ -1,0 +1,28 @@
+.. include:: ../../../include/definition.txt
+
+.. _FMS_introduce_baseset_im_master:
+
+===================================================
+|IM_MST| の設定
+===================================================
+
+
+.. toctree::
+   :maxdepth: 1
+   
+   company
+   role
+   user
+   item_category
+   corporation
+   authorization
+
+.. only:: internal
+
+   company        :会社・組織設定
+   role           :ロール・メニュー設定
+   user           :ユーザ設定
+   item_category  :品目カテゴリ設定
+   corporation    :法人設定
+   authorization  :認可設定
+

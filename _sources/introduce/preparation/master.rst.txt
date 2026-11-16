@@ -1,0 +1,129 @@
+.. include:: ../../include/definition.txt
+
+.. _SMS_introduce_preparation-master:
+
+===================================================
+マスタ設定準備
+===================================================
+
+マスタの設定準備を行い、以降の導入作業でスムーズにマスタの設定を行えるようにします。
+
+.. _SMS_introduce_preparation-master-im:
+
+|IM_MST| ・ |BIZ| 共通マスタ
+===================================================
+
+|IM_MST| ・ |BIZ| 共通マスタ上で事前に決定する必要のある内容は以下となります。
+
+.. list-table::
+   :widths: 5,5
+   :header-rows: 1
+   
+   * - 事前に決定する内容
+     - 設定手順
+   * - 会社・組織
+     - :ref:`SMS_introduce_baseset_im_master-department`
+   * - ロール
+     - :ref:`SMS_introduce_baseset_im_master-role`
+   * - ユーザ
+     - :ref:`SMS_introduce_baseset_im_master-user`
+   * - 品目カテゴリ
+     - :ref:`SMS_introduce_baseset_im_master-item-category`
+   * - 法人
+     - :ref:`SMS_introduce_baseset_im_master-item-corporation`
+   * - 認可
+     - :ref:`SMS_introduce_baseset_im_master-authorization`
+   * - 権限
+     - :ref:`SMS_introduce_baseset_auth-authority`
+   * - 単位
+     - :ref:`SMS_introduce_baseset_biz-unit`
+   * - 通貨
+     - :ref:`SMS_introduce_baseset_biz-currency`
+   * - カレンダ
+     - :ref:`SMS_introduce_baseset_biz-calendar`
+   * - 間接税
+     - :ref:`SMS_introduce_baseset_biz-indirect_tax`
+
+.. _SMS_introduce_preparation-master-fc:
+
+|SMS| のマスタ
+===================================================
+
+|SMS| のマスタ上で事前に決定する必要のある内容は以下となります。
+
+.. list-table::
+   :widths: 5,5
+   :header-rows: 1
+   
+   * - 事前に決定する内容
+     - 設定手順
+   * - コードマスタ
+     - :ref:`SMS_introduce_baseset_sms-code`
+   * - システムパラメータ
+     - :ref:`SMS_introduce_baseset_sms-system-parameter`
+   * - 会社パラメータ
+     - :ref:`SMS_introduce_baseset_sms-inhouse-parameter`
+   * - 税区分マスタ
+     - :ref:`SMS_introduce_baseset_sms-tax`
+   * - 仕訳定義マスタ
+     - :ref:`SMS_introduce_baseset_sms-journal`
+   * - アプリケーションロックマスタ
+     - :ref:`SMS_introduce_baseset_sms-application-lock`
+   * - 締め管理マスタ
+     - :ref:`SMS_introduce_baseset_sms-close`
+   * - 採番マスタ
+     - :ref:`SMS_introduce_baseset_sms-slip-no`
+   * - 倉庫・棚
+     - :ref:`SMS_introduce_baseset_sms-warehouse`
+   * - 取引先マスタ
+     - :ref:`SMS_introduce_baseset_sms-customer`
+   * - 品目
+     - :ref:`SMS_introduce_baseset_sms-item`
+   * - 倉庫別品目情報
+     - :ref:`SMS_introduce_baseset_sms-warehouse-item`
+   * - 諸掛マスタ
+     - :ref:`SMS_introduce_baseset_sms-incidental`
+   * - 取引先別単価
+     - :ref:`SMS_introduce_baseset_sms-customer-unit-price`
+   * - 取引先品目別情報登録
+     - :ref:`SMS_introduce_baseset_sms-customer-item`
+
+.. _SMS_introduce_preparation-master-wf:
+
+ワークフローのマスタ
+===================================================
+
+ワークフローのマスタ上で事前に決定する必要のある内容は以下となります。
+
+.. list-table::
+   :widths: 5,5
+   :header-rows: 1
+   
+   * - 事前に決定する内容
+     - 設定手順
+   * - ルート
+     - :ref:`SMS_introduce_workflow-route`
+   * - |SMS| ワークフローパラメータ
+     - :ref:`SMS_introduce_workflow-sms_wf_parameter`
+
+.. note::
+
+  ワークフローを導入する場合のみ
+
+
+.. _SMS_introduce_preparation-master-batch:
+
+バッチ処理
+===================================================
+
+バッチ処理上で事前に決定する必要のある内容は以下となります。
+
+.. list-table::
+   :widths: 5,5
+   :header-rows: 1
+   
+   * - 事前に決定する内容
+     - 設定手順
+   * - バッチ
+     - :ref:`SMS_introduce_batch`
+

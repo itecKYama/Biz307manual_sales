@@ -1,0 +1,10 @@
+.. _SMS_installation_guide:
+
+運用環境セットアップガイド
+================================
+
+.. toctree::
+   :maxdepth: 2
+
+   preface
+   installation

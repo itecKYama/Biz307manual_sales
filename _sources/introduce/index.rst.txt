@@ -1,0 +1,28 @@
+.. include:: ../include/definition.txt
+
+.. _SMS_introduce:
+
+===================================================
+導入マニュアル
+===================================================
+
+.. toctree::
+   :maxdepth: 2
+   
+   preface/index
+   preparation/index
+   baseset/index
+   sms/index
+   workflow/index
+   batch/index
+   appendix/Appendix
+   
+.. only:: internal
+
+   preface/index      :はじめに
+   preparation/index  :導入前準備
+   baseset/index      :BIZ∫基盤の設定
+   sms/index          :BIZ∫販売マスタの設定
+   workflow/index     :IMワークフロー設定
+   batch/index        :バッチ設定
+   appendix/Appendix  :Appendix

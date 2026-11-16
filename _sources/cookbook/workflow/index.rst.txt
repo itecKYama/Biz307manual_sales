@@ -1,0 +1,12 @@
+.. _SMS_cookbook_workflow:
+
+============
+ワークフロー
+============
+
+.. toctree::
+   :maxdepth: 1
+
+   action
+   self_approve
+   comma_separate

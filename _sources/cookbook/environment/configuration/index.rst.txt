@@ -1,0 +1,53 @@
+.. include:: ../../../include/definition.txt
+
+.. _SMS_cookbook_environment_configuration:
+
+==============================
+各種マスタの設定資料を参照する
+==============================
+
+.. _SMS_cookbook_environment_configuration-overview:
+
+概要
+====
+
+Biz∫販売で使用しているマスタへデータを登録する際の参考資料を記載します。
+
+
+.. _SMS_cookbook_environment_configuration-reference:
+
+参考資料
+========
+
+Biz∫販売のドキュメント配布物をご参照ください。
+
+  .. list-table::
+       :widths: 10, 30
+       :header-rows: 1
+
+       * - 確認する内容
+         - 参照先
+       * - マスタへの設定内容、注意点
+         - :download:`manual/10_manual/03_マスタ設定マニュアル/マスタ設定シート.xlsx <document/マスタ設定シート.xlsx>`
+       * - ER図
+         - | 01_DesignDocument/第4章_データモデル設計/4.2_概念ER図/01_マスタ.vsdx
+           | 01_DesignDocument/第4章_データモデル設計/4.2_概念ER図/02_トランザクション.vsdx
+           | 01_DesignDocument/第4章_データモデル設計/4.2_概念ER図/02_共通管理.vsdx
+           | 01_DesignDocument/第4章_データモデル設計/4.2_概念ER図/03_見積.vsdx
+           | 01_DesignDocument/第4章_データモデル設計/4.2_概念ER図/04_受注.vsdx
+           | 01_DesignDocument/第4章_データモデル設計/4.2_概念ER図/05_出荷.vsdx
+           | 01_DesignDocument/第4章_データモデル設計/4.2_概念ER図/06_売上.vsdx
+           | 01_DesignDocument/第4章_データモデル設計/4.2_概念ER図/07_出荷指示.vsdx
+           | 01_DesignDocument/第4章_データモデル設計/4.2_概念ER図/10_購買依頼.vsdx
+           | 01_DesignDocument/第4章_データモデル設計/4.2_概念ER図/11_発注.vsdx
+           | 01_DesignDocument/第4章_データモデル設計/4.2_概念ER図/12_入荷.vsdx
+           | 01_DesignDocument/第4章_データモデル設計/4.2_概念ER図/13_仕入.vsdx
+           | 01_DesignDocument/第4章_データモデル設計/4.2_概念ER図/15_在庫.vsdx
+           | 01_DesignDocument/第4章_データモデル設計/4.2_概念ER図/17_受発注・売上仕入.vsdx
+           | 01_DesignDocument/第4章_データモデル設計/4.2_概念ER図/20_諸掛.vsdx
+           | 01_DesignDocument/第4章_データモデル設計/4.2_概念ER図/21_貿易.vsdx
+           | 01_DesignDocument/第4章_データモデル設計/4.2_概念ER図/22_棚卸.vsdx
+       * - エンティティ一覧
+         - 01_DesignDocument/第4章_データモデル設計/4.4_エンティティ一覧/01_エンティティ一覧.xlsx
+       * - 個別のエンティティ定義
+         - 01_DesignDocument/第4章_データモデル設計/4.5_エンティティ定義書

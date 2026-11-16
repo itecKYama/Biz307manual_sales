@@ -1,0 +1,14 @@
+.. include:: ../../include/definition.txt
+
+.. _SMS_cookbook_environment:
+
+=============
+開発/動作環境
+=============
+
+.. toctree::
+   :maxdepth: 2
+
+   configuration/index
+   menu/index
+   cleanup

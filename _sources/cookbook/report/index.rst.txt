@@ -1,0 +1,10 @@
+.. _SMS_cookbook_report:
+
+====
+帳票
+====
+
+.. toctree::
+   :maxdepth: 1
+
+   layout

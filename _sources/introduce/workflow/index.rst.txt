@@ -1,0 +1,22 @@
+.. include:: ../../include/definition.txt
+
+.. _SMS_introduce_workflow:
+
+===================================================
+|IM_WF| 設定
+===================================================
+
+.. toctree::
+   :maxdepth: 1
+   :numbered:
+   
+   import
+   route
+   sms_wf_parameter
+
+
+.. only:: internal
+
+   import           : IM-Workflow マスタデータインポート
+   route            : ルート修正
+   sms_wf_parameter : |SMS| ワークフローパラメータ修正

@@ -1,0 +1,46 @@
+.. include:: ../../include/definition.txt
+
+.. _SMS_introduce_sms:
+
+===================================================
+販売マスタの設定
+===================================================
+
+.. toctree::
+   :maxdepth: 1
+   :numbered:
+   
+   code
+   system_parameter
+   inhouse_parameter
+   tax
+   journal
+   application_lock
+   close
+   slip_no
+   warehouse
+   customer
+   item
+   warehouse_item
+   incidental
+   customer_unit_price
+   customer_item
+
+.. only:: internal
+
+   code                       :コードマスタ設定
+   system_parameter           :システムパラメータ設定
+   inhouse_parameter          :会社パラメータ設定
+   tax                        :税区分マスタ設定
+   journal                    :仕訳定義マスタ設定
+   application_lock           :アプリケーションロックマスタ設定
+   close                      :締め管理マスタ設定
+   slip_no                    :採番マスタ設定
+   warehouse                  :倉庫・棚登録
+   customer                   :取引先登録
+   item                       :品目登録
+   warehouse_item             :倉庫別品目情報登録
+   incidental                 :諸掛マスタ設定
+   customer_unit_price        :取引先別単価登録
+   customer_item              :取引先品目別情報登録
+   
